@@ -581,6 +581,14 @@ int libpff_folder_determine_sub_folders(
 			}
 		}
 	}
+
+	if( descriptor_index_value != NULL )
+	{
+		libpff_index_value_free(
+		 &descriptor_index_value,
+		 NULL );
+	}
+	
 	return( 1 );
 }
 
